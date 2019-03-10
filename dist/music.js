@@ -1,4 +1,4 @@
-const apFixed = new APlayer({
+const ap = new APlayer({
   element: document.getElementById('aplayer-fixed'),
   mutex: true,
   theme: '#97dffd',
@@ -9,6 +9,6 @@ const apFixed = new APlayer({
 $.ajax({
   url: 'https://api.i-meto.com/meting/api?server=netease&type=playlist&id=89017693',
   success: function (list) {
-    apFixed.list.add(JSON.parse(list));
+    ap.list.add(JSON.parse(list));
   }
 });
