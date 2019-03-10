@@ -5,6 +5,7 @@ const ap = new APlayer({
   order: 'random',
   lrcType: 3,
   fixed: true,
+  autoplay: true,
 });
 $.ajax({
   url: 'https://api.i-meto.com/meting/api?server=netease&type=playlist&id=89017693',
